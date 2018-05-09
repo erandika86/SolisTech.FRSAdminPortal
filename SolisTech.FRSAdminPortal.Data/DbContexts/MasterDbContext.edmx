@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="frsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="companies">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="companyid" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="companyname" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="address1" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="address2" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="city" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="province" Type="char" MaxLength="2" Nullable="false" />
+          <Property Name="postal" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="country" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="contact1" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="contact2" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="contact3" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="phone1" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="phone2" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="phone3" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="email1" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="email2" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="email3" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="dbname" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="smtpserver" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="smtpuser" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="smtppassword" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="smtpfrom" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="rssfeed" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="rssindustry" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="multiplecards" Type="tinyint" Nullable="false" />
+          <Property Name="hourstart" Type="int" Nullable="false" />
+          <Property Name="hourend" Type="int" Nullable="false" />
+          <Property Name="maxcolumns" Type="int" Nullable="false" />
+          <Property Name="fanat" Type="int" Nullable="false" />
+          <Property Name="googlemapkey" Type="varchar(max)" Nullable="false" />
+          <Property Name="lat" Type="decimal" Precision="18" Scale="10" Nullable="false" />
+          <Property Name="lng" Type="decimal" Precision="18" Scale="10" Nullable="false" />
+          <Property Name="answertasks" Type="tinyint" Nullable="false" />
+          <Property Name="forecastquestions" Type="tinyint" Nullable="false" />
+          <Property Name="numericquestions" Type="tinyint" Nullable="false" />
+          <Property Name="alphaquestions" Type="tinyint" Nullable="false" />
+          <Property Name="mobileinterface" Type="tinyint" Nullable="false" />
+          <Property Name="prospectsinterface" Type="tinyint" Nullable="false" />
+          <Property Name="addprospects" Type="int" Nullable="false" />
+          <Property Name="qadateselect" Type="tinyint" Nullable="false" />
+          <Property Name="shortcode" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="webserver" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="faquotastatistics" Type="tinyint" Nullable="false" />
+          <Property Name="faforecaststatistics" Type="tinyint" Nullable="false" />
+          <Property Name="dashboardtotals" Type="int" Nullable="false" />
+          <Property Name="dashboardcounts" Type="int" Nullable="false" />
+          <Property Name="calltimers" Type="int" Nullable="false" />
+          <Property Name="defaultcardsource" Type="int" Nullable="false" />
+          <Property Name="mastercard" Type="int" Nullable="false" />
+          <Property Name="dbschedule" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="monthly" Type="int" Nullable="false" />
+          <Property Name="rollups" Type="tinyint" Nullable="false" />
+          <Property Name="limitcardsbydistrict" Type="tinyint" Nullable="false" />
+          <Property Name="roclients" Type="tinyint" Nullable="false" />
+          <Property Name="ftppath" Type="varchar" MaxLength="250" />
+          <Property Name="displayname_expression" Type="varchar(max)" Nullable="false" />
+          <Property Name="remoteaccess_clients" Type="tinyint" Nullable="false" />
+          <Property Name="cardoverride" Type="tinyint" Nullable="false" />
+          <Property Name="cardsbyname" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="allClients" Type="int" Nullable="false" />
+          <Property Name="logintimeout" Type="int" Nullable="false" />
+          <Property Name="clientautoassign" Type="int" Nullable="false" />
+          <Property Name="allowfabackout" Type="int" Nullable="false" />
+          <Property Name="contactstyle" Type="tinyint" Nullable="false" />
+          <Property Name="uifollowsdefaultcard" Type="int" Nullable="false" />
+          <Property Name="defaultUserPermissionID" Type="int" Nullable="false" />
+          <Property Name="showhistory" Type="int" Nullable="false" />
+          <Property Name="daterangefilter" Type="int" Nullable="false" />
+          <Property Name="disableclientnumber" Type="int" Nullable="false" />
+          <Property Name="subdomain" Type="int" Nullable="false" />
+          <Property Name="disableclientalert" Type="int" Nullable="false" />
+          <Property Name="disableclientcategory" Type="int" Nullable="false" />
+          <Property Name="disableclientnumber2" Type="int" Nullable="false" />
+          <Property Name="reportdocuments" Type="int" Nullable="false" />
+          <Property Name="hide_optional_answers_for_mobileapp" Type="int" Nullable="false" />
+          <Property Name="hide_client_task" Type="int" Nullable="false" />
+          <Property Name="autogenaratedclientnumber" Type="int" Nullable="false" />
+          <Property Name="enable_email_notification" Type="int" Nullable="false" />
+          <Property Name="newClientNotificationEmail" Type="varchar(max)" />
+          <Property Name="parentchildclients" Type="int" Nullable="false" />
+          <Property Name="clientsmerge" Type="int" Nullable="false" />
+          <Property Name="allowwebapi" Type="int" Nullable="false" />
+          <Property Name="apikey" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="api_calling_ip" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="submitactivitiestoexternalwebservice" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="frsModelStoreContainer">
+          <EntitySet Name="companies" EntityType="Self.companies" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="frsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="company">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="companyid" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="companyname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="address1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="address2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="province" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="postal" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="country" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="contact1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="contact2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="contact3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="phone1" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="phone2" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="phone3" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="email1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="email2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="email3" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dbname" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="smtpserver" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="smtpuser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="smtppassword" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="smtpfrom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="rssfeed" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="rssindustry" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="multiplecards" Type="Byte" Nullable="false" />
+          <Property Name="hourstart" Type="Int32" Nullable="false" />
+          <Property Name="hourend" Type="Int32" Nullable="false" />
+          <Property Name="maxcolumns" Type="Int32" Nullable="false" />
+          <Property Name="fanat" Type="Int32" Nullable="false" />
+          <Property Name="googlemapkey" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="lat" Type="Decimal" Precision="18" Scale="10" Nullable="false" />
+          <Property Name="lng" Type="Decimal" Precision="18" Scale="10" Nullable="false" />
+          <Property Name="answertasks" Type="Byte" Nullable="false" />
+          <Property Name="forecastquestions" Type="Byte" Nullable="false" />
+          <Property Name="numericquestions" Type="Byte" Nullable="false" />
+          <Property Name="alphaquestions" Type="Byte" Nullable="false" />
+          <Property Name="mobileinterface" Type="Byte" Nullable="false" />
+          <Property Name="prospectsinterface" Type="Byte" Nullable="false" />
+          <Property Name="addprospects" Type="Int32" Nullable="false" />
+          <Property Name="qadateselect" Type="Byte" Nullable="false" />
+          <Property Name="shortcode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="webserver" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="faquotastatistics" Type="Byte" Nullable="false" />
+          <Property Name="faforecaststatistics" Type="Byte" Nullable="false" />
+          <Property Name="dashboardtotals" Type="Int32" Nullable="false" />
+          <Property Name="dashboardcounts" Type="Int32" Nullable="false" />
+          <Property Name="calltimers" Type="Int32" Nullable="false" />
+          <Property Name="defaultcardsource" Type="Int32" Nullable="false" />
+          <Property Name="mastercard" Type="Int32" Nullable="false" />
+          <Property Name="dbschedule" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="monthly" Type="Int32" Nullable="false" />
+          <Property Name="rollups" Type="Byte" Nullable="false" />
+          <Property Name="limitcardsbydistrict" Type="Byte" Nullable="false" />
+          <Property Name="roclients" Type="Byte" Nullable="false" />
+          <Property Name="ftppath" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="displayname_expression" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="remoteaccess_clients" Type="Byte" Nullable="false" />
+          <Property Name="cardoverride" Type="Byte" Nullable="false" />
+          <Property Name="cardsbyname" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="allClients" Type="Int32" Nullable="false" />
+          <Property Name="logintimeout" Type="Int32" Nullable="false" />
+          <Property Name="clientautoassign" Type="Int32" Nullable="false" />
+          <Property Name="allowfabackout" Type="Int32" Nullable="false" />
+          <Property Name="contactstyle" Type="Byte" Nullable="false" />
+          <Property Name="uifollowsdefaultcard" Type="Int32" Nullable="false" />
+          <Property Name="defaultUserPermissionID" Type="Int32" Nullable="false" />
+          <Property Name="showhistory" Type="Int32" Nullable="false" />
+          <Property Name="daterangefilter" Type="Int32" Nullable="false" />
+          <Property Name="disableclientnumber" Type="Int32" Nullable="false" />
+          <Property Name="subdomain" Type="Int32" Nullable="false" />
+          <Property Name="disableclientalert" Type="Int32" Nullable="false" />
+          <Property Name="disableclientcategory" Type="Int32" Nullable="false" />
+          <Property Name="disableclientnumber2" Type="Int32" Nullable="false" />
+          <Property Name="reportdocuments" Type="Int32" Nullable="false" />
+          <Property Name="hide_optional_answers_for_mobileapp" Type="Int32" Nullable="false" />
+          <Property Name="hide_client_task" Type="Int32" Nullable="false" />
+          <Property Name="autogenaratedclientnumber" Type="Int32" Nullable="false" />
+          <Property Name="enable_email_notification" Type="Int32" Nullable="false" />
+          <Property Name="newClientNotificationEmail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="parentchildclients" Type="Int32" Nullable="false" />
+          <Property Name="clientsmerge" Type="Int32" Nullable="false" />
+          <Property Name="allowwebapi" Type="Int32" Nullable="false" />
+          <Property Name="apikey" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="api_calling_ip" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="submitactivitiestoexternalwebservice" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="frsEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="companies" EntityType="Self.company" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="frsModelStoreContainer" CdmEntityContainer="frsEntities">
+          <EntitySetMapping Name="companies">
+            <EntityTypeMapping TypeName="frsModel.company">
+              <MappingFragment StoreEntitySet="companies">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="companyid" ColumnName="companyid" />
+                <ScalarProperty Name="companyname" ColumnName="companyname" />
+                <ScalarProperty Name="address1" ColumnName="address1" />
+                <ScalarProperty Name="address2" ColumnName="address2" />
+                <ScalarProperty Name="city" ColumnName="city" />
+                <ScalarProperty Name="province" ColumnName="province" />
+                <ScalarProperty Name="postal" ColumnName="postal" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="contact1" ColumnName="contact1" />
+                <ScalarProperty Name="contact2" ColumnName="contact2" />
+                <ScalarProperty Name="contact3" ColumnName="contact3" />
+                <ScalarProperty Name="phone1" ColumnName="phone1" />
+                <ScalarProperty Name="phone2" ColumnName="phone2" />
+                <ScalarProperty Name="phone3" ColumnName="phone3" />
+                <ScalarProperty Name="email1" ColumnName="email1" />
+                <ScalarProperty Name="email2" ColumnName="email2" />
+                <ScalarProperty Name="email3" ColumnName="email3" />
+                <ScalarProperty Name="dbname" ColumnName="dbname" />
+                <ScalarProperty Name="smtpserver" ColumnName="smtpserver" />
+                <ScalarProperty Name="smtpuser" ColumnName="smtpuser" />
+                <ScalarProperty Name="smtppassword" ColumnName="smtppassword" />
+                <ScalarProperty Name="smtpfrom" ColumnName="smtpfrom" />
+                <ScalarProperty Name="rssfeed" ColumnName="rssfeed" />
+                <ScalarProperty Name="rssindustry" ColumnName="rssindustry" />
+                <ScalarProperty Name="multiplecards" ColumnName="multiplecards" />
+                <ScalarProperty Name="hourstart" ColumnName="hourstart" />
+                <ScalarProperty Name="hourend" ColumnName="hourend" />
+                <ScalarProperty Name="maxcolumns" ColumnName="maxcolumns" />
+                <ScalarProperty Name="fanat" ColumnName="fanat" />
+                <ScalarProperty Name="googlemapkey" ColumnName="googlemapkey" />
+                <ScalarProperty Name="lat" ColumnName="lat" />
+                <ScalarProperty Name="lng" ColumnName="lng" />
+                <ScalarProperty Name="answertasks" ColumnName="answertasks" />
+                <ScalarProperty Name="forecastquestions" ColumnName="forecastquestions" />
+                <ScalarProperty Name="numericquestions" ColumnName="numericquestions" />
+                <ScalarProperty Name="alphaquestions" ColumnName="alphaquestions" />
+                <ScalarProperty Name="mobileinterface" ColumnName="mobileinterface" />
+                <ScalarProperty Name="prospectsinterface" ColumnName="prospectsinterface" />
+                <ScalarProperty Name="addprospects" ColumnName="addprospects" />
+                <ScalarProperty Name="qadateselect" ColumnName="qadateselect" />
+                <ScalarProperty Name="shortcode" ColumnName="shortcode" />
+                <ScalarProperty Name="webserver" ColumnName="webserver" />
+                <ScalarProperty Name="faquotastatistics" ColumnName="faquotastatistics" />
+                <ScalarProperty Name="faforecaststatistics" ColumnName="faforecaststatistics" />
+                <ScalarProperty Name="dashboardtotals" ColumnName="dashboardtotals" />
+                <ScalarProperty Name="dashboardcounts" ColumnName="dashboardcounts" />
+                <ScalarProperty Name="calltimers" ColumnName="calltimers" />
+                <ScalarProperty Name="defaultcardsource" ColumnName="defaultcardsource" />
+                <ScalarProperty Name="mastercard" ColumnName="mastercard" />
+                <ScalarProperty Name="dbschedule" ColumnName="dbschedule" />
+                <ScalarProperty Name="monthly" ColumnName="monthly" />
+                <ScalarProperty Name="rollups" ColumnName="rollups" />
+                <ScalarProperty Name="limitcardsbydistrict" ColumnName="limitcardsbydistrict" />
+                <ScalarProperty Name="roclients" ColumnName="roclients" />
+                <ScalarProperty Name="ftppath" ColumnName="ftppath" />
+                <ScalarProperty Name="displayname_expression" ColumnName="displayname_expression" />
+                <ScalarProperty Name="remoteaccess_clients" ColumnName="remoteaccess_clients" />
+                <ScalarProperty Name="cardoverride" ColumnName="cardoverride" />
+                <ScalarProperty Name="cardsbyname" ColumnName="cardsbyname" />
+                <ScalarProperty Name="allClients" ColumnName="allClients" />
+                <ScalarProperty Name="logintimeout" ColumnName="logintimeout" />
+                <ScalarProperty Name="clientautoassign" ColumnName="clientautoassign" />
+                <ScalarProperty Name="allowfabackout" ColumnName="allowfabackout" />
+                <ScalarProperty Name="contactstyle" ColumnName="contactstyle" />
+                <ScalarProperty Name="uifollowsdefaultcard" ColumnName="uifollowsdefaultcard" />
+                <ScalarProperty Name="defaultUserPermissionID" ColumnName="defaultUserPermissionID" />
+                <ScalarProperty Name="showhistory" ColumnName="showhistory" />
+                <ScalarProperty Name="daterangefilter" ColumnName="daterangefilter" />
+                <ScalarProperty Name="disableclientnumber" ColumnName="disableclientnumber" />
+                <ScalarProperty Name="subdomain" ColumnName="subdomain" />
+                <ScalarProperty Name="disableclientalert" ColumnName="disableclientalert" />
+                <ScalarProperty Name="disableclientcategory" ColumnName="disableclientcategory" />
+                <ScalarProperty Name="disableclientnumber2" ColumnName="disableclientnumber2" />
+                <ScalarProperty Name="reportdocuments" ColumnName="reportdocuments" />
+                <ScalarProperty Name="hide_optional_answers_for_mobileapp" ColumnName="hide_optional_answers_for_mobileapp" />
+                <ScalarProperty Name="hide_client_task" ColumnName="hide_client_task" />
+                <ScalarProperty Name="autogenaratedclientnumber" ColumnName="autogenaratedclientnumber" />
+                <ScalarProperty Name="enable_email_notification" ColumnName="enable_email_notification" />
+                <ScalarProperty Name="newClientNotificationEmail" ColumnName="newClientNotificationEmail" />
+                <ScalarProperty Name="parentchildclients" ColumnName="parentchildclients" />
+                <ScalarProperty Name="clientsmerge" ColumnName="clientsmerge" />
+                <ScalarProperty Name="allowwebapi" ColumnName="allowwebapi" />
+                <ScalarProperty Name="apikey" ColumnName="apikey" />
+                <ScalarProperty Name="api_calling_ip" ColumnName="api_calling_ip" />
+                <ScalarProperty Name="submitactivitiestoexternalwebservice" ColumnName="submitactivitiestoexternalwebservice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

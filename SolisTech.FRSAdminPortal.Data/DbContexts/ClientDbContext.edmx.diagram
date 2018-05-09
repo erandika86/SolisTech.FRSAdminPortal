@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="eb85656fe5b84739a8b1ff48cfa9d62a" Name="Diagram1">
+        <EntityTypeShape EntityType="imfinzidevModel.accountcategory" Width="1.5" PointX="1.5" PointY="67.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.accountnumberrule" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.accounttype" Width="1.5" PointX="3.75" PointY="76" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.AccountTypes_cards" Width="1.5" PointX="8.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.activityreport_config" Width="1.5" PointX="8.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.activityreport_config_log" Width="1.5" PointX="10.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.address" Width="1.5" PointX="16.25" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.answer" Width="1.5" PointX="0.75" PointY="27.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.answerstring" Width="1.5" PointX="3" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.audit_association" Width="1.5" PointX="11.75" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.audit_byid" Width="1.5" PointX="19.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.audit_byidname" Width="1.5" PointX="13.75" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.caColumnAccess" Width="1.5" PointX="6.75" PointY="42.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.caColumnAccess_messageQuestions" Width="1.5" PointX="9" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.caColumnAccess_questions" Width="1.5" PointX="9" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.card" Width="1.5" PointX="4.5" PointY="39.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.client_documents" Width="1.5" PointX="16.25" PointY="35.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.client_tasks" Width="1.5" PointX="19.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.clientcontacts_report_config" Width="1.5" PointX="15.75" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.client" Width="1.5" PointX="14" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.clients_address" Width="1.5" PointX="18.5" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.clients_address_relationship" Width="1.5" PointX="0.75" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.clients_address_text" Width="1.5" PointX="3" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.clients_contact" Width="1.5" PointX="20.75" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.clients_contact_relationship" Width="1.5" PointX="0.75" PointY="33.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.clients_contact_text" Width="1.5" PointX="3" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.clients_default_customfield" Width="1.5" PointX="10.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.clients_phone" Width="1.5" PointX="16.25" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.clients_phone_relationship" Width="1.5" PointX="3.75" PointY="28.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.clients_phone_text" Width="1.5" PointX="6" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.clients_renumber" Width="1.5" PointX="17.75" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.clientsalert" Width="1.5" PointX="1.5" PointY="76.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.clientsfah" Width="1.5" PointX="16.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.clientsnote" Width="1.5" PointX="7.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.contact" Width="1.5" PointX="18.5" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.contact_address" Width="1.5" PointX="20.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.contact_address_relationship" Width="1.5" PointX="3.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.contact_address_text" Width="1.5" PointX="6" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.contact_customfield" Width="1.5" PointX="20.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.contact_phone" Width="1.5" PointX="23.75" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.contact_phone_relationship" Width="1.5" PointX="3.75" PointY="31.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.contact_phone_text" Width="1.5" PointX="6" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.customfield" Width="1.5" PointX="20.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.dashboard" Width="1.5" PointX="1.5" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.dashboard_statfilter" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.dashboard_statheading" Width="1.5" PointX="3" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.dashboard_statistic" Width="1.5" PointX="0.75" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.dashboardcount" Width="1.5" PointX="21.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.dashboardline" Width="1.5" PointX="3.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.dashboardline_condition" Width="1.5" PointX="6" PointY="35.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.dashboardline_filter" Width="1.5" PointX="21.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.dashboardstring" Width="1.5" PointX="3" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.dashboardtotal" Width="1.5" PointX="22.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.district" Width="1.5" PointX="1.5" PointY="79.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.gateway" Width="1.5" PointX="12.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.group_messages" Width="1.5" PointX="22.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.group" Width="1.5" PointX="1.5" PointY="83.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.help" Width="1.5" PointX="22.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.holiday" Width="1.5" PointX="3.75" PointY="46.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.holidaygroup" Width="1.5" PointX="1.5" PointY="46.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.language" Width="1.5" PointX="0.75" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.link" Width="1.5" PointX="17.75" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.messageboard" Width="1.5" PointX="19.75" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.mobileo" Width="1.5" PointX="9.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.msgin" Width="1.5" PointX="22.75" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.msgin_log" Width="1.5" PointX="23.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.msgin_rejected" Width="1.5" PointX="23.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.msgout" Width="1.5" PointX="11.75" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.permission" Width="1.5" PointX="1.5" PointY="70" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.phone" Width="1.5" PointX="11.75" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.prospect" Width="1.5" PointX="24.75" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.prospects_import_header" Width="1.5" PointX="24.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.prospects_status" Width="1.5" PointX="22.75" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.prospectsnote" Width="1.5" PointX="5.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.provider" Width="1.5" PointX="24.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.question" Width="1.5" PointX="6.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.questionstring" Width="1.5" PointX="9" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.region" Width="1.5" PointX="3.75" PointY="78.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.report" Width="1.5" PointX="3.75" PointY="58.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.report_column" Width="1.5" PointX="6" PointY="32.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.report_columnsource" Width="1.5" PointX="3.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.report_columnstring" Width="1.5" PointX="6" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.reportstring" Width="1.5" PointX="6" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.savedReportConfig" Width="1.5" PointX="13.75" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.smtpout" Width="1.5" PointX="24.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.target" Width="1.5" PointX="4.5" PointY="70.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.targetrange" Width="1.5" PointX="4.5" PointY="72.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.targetvalue" Width="1.5" PointX="6.75" PointY="59.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.team" Width="1.5" PointX="25.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.term" Width="1.5" PointX="3" PointY="50.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.termchar" Width="1.5" PointX="25.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.territory" Width="1.5" PointX="8.75" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.timezone" Width="1.5" PointX="15.75" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.tracking_data" Width="1.5" PointX="17.75" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.tracking_history_data" Width="1.5" PointX="19.75" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.tracking_history_time" Width="1.5" PointX="26.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.tracking_time" Width="1.5" PointX="26.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.user_documents" Width="1.5" PointX="14.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.userDevice" Width="1.5" PointX="3.75" PointY="54.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.UserNotification" Width="1.5" PointX="3.75" PointY="63" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.user" Width="1.5" PointX="1.5" PointY="55.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.users_daysoff" Width="1.5" PointX="25.75" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.users_exereg" Width="1.5" PointX="5.75" PointY="28.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.users_login" Width="1.5" PointX="26.75" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.users_setting" Width="1.5" PointX="21.75" PointY="28.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.users_status" Width="1.5" PointX="26.75" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.usersexpens" Width="1.5" PointX="17" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.UsersMileage" Width="1.5" PointX="3.75" PointY="66.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.viewoption" Width="1.5" PointX="10.75" PointY="29.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.visitreport_config" Width="1.5" PointX="27.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.visitreport_config_log" Width="1.5" PointX="27.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.visitreport_run" Width="1.5" PointX="27.75" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.mobileapp" Width="1.5" PointX="12" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.prospects_import_detail" Width="1.5" PointX="26.75" PointY="29.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.ReferralAccount" Width="1.5" PointX="28.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.ReportScheduler" Width="1.5" PointX="28.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.setting" Width="1.5" PointX="12.75" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.trace" Width="1.5" PointX="14.75" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.tracking" Width="1.5" PointX="28.75" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.tracking_history" Width="1.5" PointX="28.75" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.userdashboard" Width="1.5" PointX="6.75" PointY="38.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="imfinzidevModel.webservice_inputlog" Width="1.5" PointX="29.75" PointY="2.5" IsExpanded="true" />
+        <AssociationConnector Association="imfinzidevModel.FK__address__creator__40306ADC" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__address__creator__41248F15" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__clients__primary__524F1B17" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__clients_a__addre__5CCCA98A" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__contact__primary__54376389" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__contact_a__addre__04DA9AE4" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__answerstr__answe__741A2336" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__answerstr__langu__750E476F" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__caColumnA__caCol__34796377" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__caColumnA__caCol__caColumnAccessID" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__caColumnA__caCol__card" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__caColumnA__quest__00D4FFD6" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__caColumnA__quest__7B1C2680" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__userdashb__cardi__1CE72E9F" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK_client_documents_clients1" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK_client_documents_users1" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__clients__primary__515AF6DE" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__clients__primary__53433F50" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__clients_a__clien__5BD88551" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__clients_c__clien__6932806F" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__clients_p__clien__768C7B8D" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__contact__creator__388F4914" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__phone__creator_c__4F72AE6C" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__clients_a__relat__5DC0CDC3" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__clients_a__relat__609D3A6E" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__clients_a__langu__61915EA7" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__clients_c__conta__6A26A4A8" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__clients_c__relat__6B1AC8E1" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__clients_c__relat__6DF7358C" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__clients_c__langu__6EEB59C5" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__clients_p__phone__77809FC6" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__clients_p__relat__7874C3FF" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__clients_p__relat__7B5130AA" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__clients_p__langu__7C4554E3" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK_clientsnotes_clientsnotes" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__contact__primary__552B87C2" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__contact_a__conta__03E676AB" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__contact_c__conta__4AADF94F" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__contact_p__conta__114071C9" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__phone__creator_c__5066D2A5" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__contact_a__relat__05CEBF1D" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__contact_a__relat__08AB2BC8" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__contact_a__langu__099F5001" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__contact_p__phone__12349602" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__contact_p__relat__1328BA3B" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__contact_p__relat__160526E6" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__contact_p__langu__16F94B1F" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__dashboard__dashb__0DA4EB0F" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__dashboard__dashb__20B7BF83" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__dashboard__dashb__60132A89" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__userdashb__dashb__1BF30A66" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__dashboard__stati__19169DBB" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__dashboard__langu__163A3110" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__dashboard__stati__15460CD7" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__dashboard__linei__65CC03DF" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__dashboard__langu__21ABE3BC" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK_holiday_holidaygroup" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK_users_holidaygroup" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__questions__langu__713DB68B" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__report_co__langu__7DA38D70" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__reportstr__langu__01741E54" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK_term_language" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK_mobileapp_mobileos" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__users__permissio__37661AB1" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK_prospectsnotes_prospectsnotes" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__questions__quest__70499252" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__reportstr__repor__007FFA1B" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK_report_column_report" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK_report_users" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK_report_column_report_columnsource" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__report_co__sourc__7CAF6937" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__targetval__targe__2E11BAA1" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__targetval__range__2FFA0313" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__targetval__useri__2F05DEDA" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK_usersexpenses_documentid" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK_user_Devices_userid" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK_user_Notification_userid1" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK_user_Notification_userid2" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK__userdashb__useri__1DDB52D8" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.FK_usersmileage_userid" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.permissions_accounttypes" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.permissions_categories" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.permissions_clientsalerts" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.permissions_districts" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.permissions_groups" ManuallyRouted="false" />
+        <AssociationConnector Association="imfinzidevModel.permissions_regions" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

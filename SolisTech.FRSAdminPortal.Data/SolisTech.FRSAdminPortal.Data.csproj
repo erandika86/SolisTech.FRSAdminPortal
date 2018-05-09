@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C9FF3AF-C81D-4228-A6E9-A3A7AC5360FA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SolisTech.FRSAdminPortal.Data</RootNamespace>
+    <AssemblyName>SolisTech.FRSAdminPortal.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbContexts\accountcategory.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\accountnumberrule.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\accounttype.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\AccountTypes_cards.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\activityreport_config.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\activityreport_config_log.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\address.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\answer.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\answerstring.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\audit_association.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\audit_byid.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\audit_byidname.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\caColumnAccess.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\caColumnAccess_messageQuestions.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\caColumnAccess_questions.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\card.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\client.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\clientcontacts_report_config.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\ClientContext.cs" />
+    <Compile Include="DbContexts\ClientDbContext.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientDbContext.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\ClientDbContext.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\ClientDbContext.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientDbContext.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\ClientDbContextPartial.cs" />
+    <Compile Include="DbContexts\clientsalert.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\clientsfah.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\clientsnote.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\clients_address.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\clients_address_relationship.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\clients_address_text.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\clients_contact.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\clients_contact_relationship.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\clients_contact_text.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\clients_default_customfield.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\clients_phone.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\clients_phone_relationship.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\clients_phone_text.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\clients_renumber.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\client_documents.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\client_tasks.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\company.cs">
+      <DependentUpon>MasterDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\contact.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\contact_address.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\contact_address_relationship.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\contact_address_text.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\contact_customfield.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\contact_phone.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\contact_phone_relationship.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\contact_phone_text.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\customfield.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\dashboard.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\dashboardcount.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\dashboardline.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\dashboardline_condition.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\dashboardline_filter.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\dashboardstring.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\dashboardtotal.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\dashboard_statfilter.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\dashboard_statheading.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\dashboard_statistic.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\district.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\gateway.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\group.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\group_messages.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\help.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\holiday.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\holidaygroup.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\language.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\link.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\MasterDbContext.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MasterDbContext.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\MasterDbContext.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MasterDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\MasterDbContext.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MasterDbContext.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\messageboard.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\mobileapp.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\mobileo.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\msgin.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\msgin_log.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\msgin_rejected.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\msgout.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\permission.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\phone.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\prospect.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\prospectsnote.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\prospects_import_detail.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\prospects_import_header.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\prospects_status.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\provider.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\question.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\questionstring.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\ReferralAccount.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\region.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\report.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\ReportScheduler.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\reportstring.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\report_column.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\report_columnsource.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\report_columnstring.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\savedReportConfig.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\setting.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\smtpout.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\target.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\targetrange.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\targetvalue.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\team.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\term.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\termchar.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\territory.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\timezone.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\trace.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\tracking.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\tracking_data.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\tracking_history.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\tracking_history_data.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\tracking_history_time.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\tracking_time.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\user.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\userdashboard.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\userDevice.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\UserNotification.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\usersexpens.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\UsersMileage.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\users_daysoff.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\users_exereg.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\users_login.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\users_setting.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\users_status.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\user_documents.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\viewoption.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\visitreport_config.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\visitreport_config_log.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\visitreport_run.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContexts\webservice_inputlog.cs">
+      <DependentUpon>ClientDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="DbContexts\MasterDbContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MasterDbContext.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="DbContexts\ClientDbContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ClientDbContext.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DbContexts\ClientDbContext.edmx.diagram">
+      <DependentUpon>ClientDbContext.edmx</DependentUpon>
+    </None>
+    <None Include="DbContexts\MasterDbContext.edmx.diagram">
+      <DependentUpon>MasterDbContext.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DbContexts\ClientDbContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ClientDbContext.edmx</DependentUpon>
+      <LastGenOutput>ClientDbContext.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DbContexts\ClientDbContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ClientDbContext.edmx</DependentUpon>
+      <LastGenOutput>ClientDbContext.cs</LastGenOutput>
+    </Content>
+    <Content Include="DbContexts\MasterDbContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MasterDbContext.edmx</DependentUpon>
+      <LastGenOutput>MasterDbContext.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DbContexts\MasterDbContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MasterDbContext.edmx</DependentUpon>
+      <LastGenOutput>MasterDbContext.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SolisTech.FRSAdminPortal.ViewModel\SolisTech.FRSAdminPortal.ViewModel.csproj">
+      <Project>{9a7613b2-2100-426e-a306-3c6f4709a8d7}</Project>
+      <Name>SolisTech.FRSAdminPortal.ViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repository\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolisTech.FRSAdminPortal.Data", "SolisTech.FRSAdminPortal.Data\SolisTech.FRSAdminPortal.Data.csproj", "{7C9FF3AF-C81D-4228-A6E9-A3A7AC5360FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolisTech.FRSAdminPortal.Common", "SolisTech.FRSAdminPortal.Common\SolisTech.FRSAdminPortal.Common.csproj", "{11975469-0F2E-4524-A9C2-8DC327315DD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolisTech.FRSAdminPortal.ViewModel", "SolisTech.FRSAdminPortal.ViewModel\SolisTech.FRSAdminPortal.ViewModel.csproj", "{9A7613B2-2100-426E-A306-3C6F4709A8D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolisTech.FRSAdminPortal.Business", "SolisTech.FRSAdminPortal.Business\SolisTech.FRSAdminPortal.Business.csproj", "{E8E106E1-513A-4D83-949C-18B96E5B70AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolisTech.FRSAdminPortal.WebApi", "SolisTech.FRSAdminPortal.WebApi\SolisTech.FRSAdminPortal.WebApi.csproj", "{1C08F2A2-A204-4EE9-A612-C32FF672AE3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C9FF3AF-C81D-4228-A6E9-A3A7AC5360FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C9FF3AF-C81D-4228-A6E9-A3A7AC5360FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C9FF3AF-C81D-4228-A6E9-A3A7AC5360FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C9FF3AF-C81D-4228-A6E9-A3A7AC5360FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11975469-0F2E-4524-A9C2-8DC327315DD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11975469-0F2E-4524-A9C2-8DC327315DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11975469-0F2E-4524-A9C2-8DC327315DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11975469-0F2E-4524-A9C2-8DC327315DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A7613B2-2100-426E-A306-3C6F4709A8D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A7613B2-2100-426E-A306-3C6F4709A8D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A7613B2-2100-426E-A306-3C6F4709A8D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A7613B2-2100-426E-A306-3C6F4709A8D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8E106E1-513A-4D83-949C-18B96E5B70AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8E106E1-513A-4D83-949C-18B96E5B70AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8E106E1-513A-4D83-949C-18B96E5B70AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8E106E1-513A-4D83-949C-18B96E5B70AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C08F2A2-A204-4EE9-A612-C32FF672AE3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C08F2A2-A204-4EE9-A612-C32FF672AE3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C08F2A2-A204-4EE9-A612-C32FF672AE3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C08F2A2-A204-4EE9-A612-C32FF672AE3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E30B950C-5F5C-4905-BE01-039BF4F2FAB0}
+	EndGlobalSection
+EndGlobal
